@@ -1,9 +1,13 @@
 const fs = require('fs');
 const Discord = require('discord.js');
+const express = require('express');
 const { prefix, token } = require('./config.json');
 const { status } = require('./templates/status.js');
 const { alias } = require('./templates/alias.js');
 const client = new Discord.Client(); 
+const app = express();
+app.listen(process.env.PORT || 5000, () => console.log('Bound to port'));
+
 //Set Status
 const setStatus = () => {
   const options = status(prefix, client);
