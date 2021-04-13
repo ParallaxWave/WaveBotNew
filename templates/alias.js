@@ -7,6 +7,7 @@ module.exports = {
     { index: ['dog', 'puppy'], command: 'dog' },
     { index: ['8b', '8ball'], command: '8ball' },
     { index: ['av', 'profile', 'pfp'], command: 'avatar' },
-    { index: ['r', 'reddit'], command: 'reddit' }
+    { index: ['r', 'reddit'], command: 'reddit' },
+    { index: ['inv', 'invite'], command: 'invite' }
   ]
 };
