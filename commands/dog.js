@@ -5,7 +5,7 @@ module.exports = {
   
   name: 'dog',
   description: 'Get an image of a dog',
-  category: 'Content',
+  category: 'Image',
   async execute(message, args){
     message.channel.send({embed: embed("Dog", "Here's a dog", message.author, Memer.dog())});
   }
